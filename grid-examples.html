@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Grid Examples</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+
+		<!-- Fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="blur-container">
+			<header>
+				<h1>CSS Grid Layout Exercises</h1>
+			</header>
+		</div>
+		<div class="spacer"></div>
+		<p>EX A</p>
+		<div class="code">
+			.grid-A {
+			<div class="tab">
+				display: grid; <br />grid-template-columns: repeat(4, 1fr);<br />
+				text-align: center;<br />
+				}
+			</div>
+		</div>
+		<div class="grid-A">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+		</div>
+		<hr />
+
+		<p>EX B</p>
+		<div class="container">
+			<div class="code">
+				.grid-B {
+				<div class="tab">
+					display: grid; <br />grid-template-columns: 1fr 2fr 1fr;<br />
+					text-align: center;<br />
+					}
+				</div>
+
+				<br />.grid-B :nth-child(2) {
+				<div class="tab">
+					background-color: rgb(130, 199, 219); <br />}
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-B">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+		</div>
+		<hr />
+
+		<p>EX C</p>
+		<div class="container">
+			<div class="code">
+				.grid-C {
+				<div class="tab">
+					display: grid; <br />grid-template-columns: repeat(4,
+					1fr);<br />
+					text-align: center;<br />
+					}
+				</div>
+
+				<br />.grid-C :nth-child(5) {
+				<div class="tab">
+					background-color: rgb(130, 199, 219); <br />grid-column:
+					span 4;<br />
+					}
+				</div>
+			</div>
+		</div>
+		<div class="grid-C">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+
+		<hr />
+		<p>EX D</p>
+		<div class="container">
+			<div class="code">
+				.grid-D {
+				<div class="tab">
+					display: grid; <br />grid-template-columns: repeat(3,
+					1fr);<br />
+					}
+				</div>
+				<div class="subtitle">
+					In order for element 2 to span over the row, we need to
+					force the height here. <br /><br />
+				</div>
+
+				.grid-D :nth-child(2) {
+				<div class="tab">
+					background-color: rgb(130, 199, 219);<br />
+					height: 100%; grid-row: span 2;<br />
+					}
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-D">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+		<hr />
+
+		<p>EX E</p>
+		<div class="container">
+			<div class="code">
+				.grid-E {<br />
+				<div class="tab">
+					display: grid;<br />
+					grid-template-columns: repeat(3, 1fr);<br />
+					}
+				</div>
+				<br />
+				.grid-E :nth-child(1) {
+				<div class="tab">
+					background-color: rgb(130, 199, 219);<br />
+					height: 100%; grid-row: 1 / span 2;<br />
+					}
+				</div>
+				<br /><br />
+				.grid-E :nth-child(2) {
+				<div class="tab">
+					background-color: rgb(130, 199, 219);<br />
+					height: 100%;<br />
+
+					grid-row: 2 / span 2;<br />
+					}
+				</div>
+			</div>
+		</div>
+		<div class="grid-E">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+		<div class="spacer"></div>
+	</body>
+</html>
